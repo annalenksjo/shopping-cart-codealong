@@ -16,6 +16,7 @@ export const CartItem = ({ product }) => {
       <span className="actions">
         <button type="button" onClick={() => dispatch(cart.actions.removeItem(product))}>-</button>
         <button type="button" onClick={() => dispatch(cart.actions.addItem(product))}>+</button>
+        <button type="button" onClick={() => dispatch(cart.actions.removeAll(product))}>🗑</button>
       </span>
     </li>
   )

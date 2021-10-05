@@ -26,6 +26,9 @@ export const cart = createSlice({
       } else {
         existingProduct.quantity -=1
       } 
+    },
+    removeAll: (state, action) => {
+      state.items = state.items.filter((item) => item.id !== action.payload.id)
     }
   }
 })
